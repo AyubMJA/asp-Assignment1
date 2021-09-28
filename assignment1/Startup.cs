@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -7,6 +7,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using assignment1.Data;
 
 namespace assignment1
 {
@@ -23,6 +25,9 @@ namespace assignment1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<assignment1Context>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("assignment1Context")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +41,18 @@ namespace assignment1
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            app.UseStatusCodePages();
+
+            app.Use(async (context, next) =>
+            {
+                await next();
+                if(context.Response.StatusCode == 404)
+                {
+                    context.Request.Path = "/Home/Error";
+                    await next();
+                }
+            });
             app.UseStaticFiles();
 
             app.UseRouting();

@@ -10,18 +10,18 @@ namespace assignment1.Models
     public class Car
     {
         [Key]
-        public int ID;
+        public int ID { get; set; }
 
         [Required]
-        public string Make;
+        public string Make { get; set; }
 
         [Required]
-        public string Model;
+        public string Model { get; set; }
 
         [Required]
-        public string Colour;
+        public string Colour { get; set; }
 
-        public int Year;
+        public int Year { get; set; }
 
         [DataType(DataType.Date)]
         [Display(Name = "Purchase")]
