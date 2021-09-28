@@ -32,12 +32,10 @@ Car module file:
         This is the First Page
         
    ![page1Car](https://user-images.githubusercontent.com/48361671/135168838-77c27e5c-c2d5-49e1-8a5a-823974531344.png)
+   
+        This is the Second Page
+   ![page2Car](https://user-images.githubusercontent.com/48361671/135169024-cdaefd08-4a4b-4f13-93f3-af946fd79f21.png)
 
-
-        
-        This is the second page
-        
-        ![page2Car](https://user-images.githubusercontent.com/48361671/135168925-a5885015-f6ed-4d77-8e03-2ae777dbb340.png)
 
 
         
