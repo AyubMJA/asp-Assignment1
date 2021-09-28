@@ -31,13 +31,17 @@ Car module file:
         
         This is the First Page
         
-        ![page1Car](https://user-images.githubusercontent.com/48361671/135168487-650883fa-0f74-4ffd-acf9-e0669d6e743c.png)
+   ![page1Car](https://user-images.githubusercontent.com/48361671/135168838-77c27e5c-c2d5-49e1-8a5a-823974531344.png)
+
 
         
         This is the second page
         
+        ![page2Car](https://user-images.githubusercontent.com/48361671/135168925-a5885015-f6ed-4d77-8e03-2ae777dbb340.png)
+
+
         
-        ![page2Car](https://user-images.githubusercontent.com/48361671/135168508-1c382801-364a-4cb1-9f8b-fc3c2f23c160.png)
+       
 
         
         
